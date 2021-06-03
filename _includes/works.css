@@ -1,0 +1,25 @@
+section#projects > ul {
+    border-top: 1px solid slategray;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+section#projects > ul:last-child {border-bottom: 1px solid slategray;
+    padding-bottom: 1rem;
+}
+section#projects * ul {
+    padding-left: 2rem;
+    font-weight: normal;
+}
+section#projects li li {
+    list-style-image: url("/files/images/icons/subdirectory_arrow_right24px.svg");
+}
+section#projects li li.paragraph {
+    border-left: 1px solid black;
+    padding-left: .5rem;
+}
+section#projects li.public {
+    list-style-image: url("/files/images/icons/public24px.svg");
+}
+section#projects li.public li {
+    list-style-image: url("/files/images/icons/subdirectory_arrow_right24px.svg");
+}
