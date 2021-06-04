@@ -6,6 +6,41 @@ title: My Certifications
 	<head>
 		{% include header.html %}
 		<style>
+			.certlist ul {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				align-content: space-between;
+			}
+			.certlist li {
+				width: 200px;
+				padding-right: 1rem;
+				padding-left: 1rem;
+				margin-bottom: 2rem;
+				margin-left: -1px;
+				border-right: 1px solid slategray;
+				border-left: 1px solid slategray;
+				list-style: none;
+				justify-content: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.certlist li * {
+				width: 100%;
+			}
+			.certlist p {
+				font-size: .875rem;
+			}
+			.certlist p:first-of-type {
+				height: 50px;
+				margin-bottom: 0;
+				line-height: 1rem;
+				border-bottom: 1px solid slategrey;
+				font-size: 1.125rem;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	
@@ -20,13 +55,45 @@ title: My Certifications
 				My Certifications
 				</h1>
 
-				<section id="completed">
+				<section id="completed" class="certlist">
 					<h2>
 						Completed
 					</h2>
-
+					<ul>
+						<li>
+							<p>CompTIA A+ ce</p>
+							<p>Completed May 20, 2021</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c63bb61f-a426-4a43-aa91-3dd223b8106b" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+						<li>
+							<p>Microsoft Office Specialist: Microsoft Outlook 2016</p>
+							<p>Completed March 6, 2019</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2edf3da2-edca-4677-9775-67425b16fd39" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+						<li>
+							<p>Microsoft Office Specialist: Microsoft Word 2016 Expert</p>
+							<p>Completed February 15, 2019</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2b73d897-6c5c-466e-a7de-da171794d3f5" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+						<li>
+							<p>Microsoft Office Specialist: Microsoft Excel 2016</p>
+							<p>Completed January 17, 2019</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d050a29b-88aa-4209-976b-441a2f6a0184" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+						<li>
+							<p>Microsoft Office Specialist: Microsoft PowerPoint 2016</p>
+							<p>Completed November 30, 2018</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c10121cf-8fa7-4ee4-9ace-1fa0774c1217" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+						<li>
+							<p>Microsoft Office Specialist: Microsoft Word 2016</p>
+							<p>Completed November 9, 2018</p>
+							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="10c38fbb-cb98-4ef6-99ff-fe9b710605c4" data-share-badge-host="https://www.credly.com"></div>
+						</li>
+					</ul>
 				</section>
-				<section id="inprogress">
+
+				<section id="inprogress" class="certlist">
 					<h2>
 						In Progress
 					</h2>
@@ -36,5 +103,6 @@ title: My Certifications
 		</div>
 		
 		{% include footer.html %}
+		<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 	</body>
 </html>

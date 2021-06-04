@@ -13,13 +13,13 @@ section#projects * ul {
 section#projects li li {
     list-style-image: url("/files/images/icons/subdirectory_arrow_right24px.svg");
 }
+section#projects :is(li.public) li {
+    list-style-image: url("/files/images/icons/subdirectory_arrow_right24px.svg");
+}
 section#projects li li.paragraph {
     border-left: 1px solid black;
     padding-left: .5rem;
 }
 section#projects li.public {
     list-style-image: url("/files/images/icons/public24px.svg");
-}
-section#projects li.public li {
-    list-style-image: url("/files/images/icons/subdirectory_arrow_right24px.svg");
 }
