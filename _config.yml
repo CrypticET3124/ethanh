@@ -1,3 +1,4 @@
 port: 4001
 incremental: true
-livereload: true
+open_url: true
+site: https://ethanh.tk
